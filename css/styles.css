@@ -1,0 +1,210 @@
+/* html */
+:root {
+  --accent-color: #ff6c00;
+  --main-font: "Open Sans", sans-serif;
+  --secondry-font: "Raleway", sans-serif;
+}
+body {
+  font-family: var(--main-font);
+  /* font-size: ;
+  /* line-height: ; */
+  /* color: green;  */
+}
+.address {
+  font-style: normal;
+}
+
+/* === COMPs === */
+.modal__btn {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  /* color: green; */
+}
+.social-links__link {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.36;
+  letter-spacing: 0em;
+  color: #303030;
+}
+
+.social-links__link:hover,
+.social-links__link:focus {
+  color: var(--accent-color);
+}
+
+.undertitle {
+  /* font-family: var(--main-font); */
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  /* color */
+}
+
+.undertitle_light-theme {
+  color: #303030;
+}
+
+.undertitle_dark-theme {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.description {
+  /* font-family: var(--main-font); */
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.description_light-theme {
+  color: #555;
+}
+
+.description_dark-theme {
+  color: #9da4bd;
+}
+.title {
+  font-family: var(--secondry-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+.title_light-theme {
+  color: #303030;
+}
+
+.title_dark-theme {
+  color: #fff;
+}
+/* === COMPs END=== */
+
+/* === HEADER === */
+.navigation__list-link,
+.header__tel {
+  /* font-style: normal; */
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  /* text-transform: uppercase; */
+  /* color: #fff; */
+}
+
+.navigation__list-link:hover,
+.navigation__list-link:focus,
+.header__tel:hover,
+.header__tel:focus {
+  color: var(--accent-color);
+}
+
+/* -- - VSC подскажет имеющиеся переменные и подставит со словом var*/
+/* === HEADER END === */
+
+/* === HERO === */
+.hero__title {
+  font-family: var(--secondry-font);
+  font-weight: 600;
+  font-size: 72px;
+  line-height: calc(85 / 72);
+  letter-spacing: 0.05em;
+}
+/* === HERO END === */
+
+/* === ABOUT === */
+.about__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(26 / 14);
+  letter-spacing: 0.02em;
+  color: #555;
+}
+/* === END ABOUT === */
+
+/* === SERVICES === */
+.services__list-item-name,
+.services__list-item-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: #9d9d9d;
+}
+/* === END SERVICES === */
+/* === ACHIVEMENTS === */
+.achivements__list-item-counter {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(57 / 42);
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #303030;
+}
+.achivements__list-item-descr {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-align: center;
+  color: #303030;
+}
+/* === END ACHIVEMENTS === */
+/* === MASTERS ===*/
+.masters__list-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #303030;
+}
+.masters__list-position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--accent-color);
+}
+/* === END MASTERS === */
+/* === GALLERY === */
+/* === END GALLERY === */
+
+/* === CONTACTS FORM ===*/
+/* === END CONTACTS FORM ===*/
+
+/* === CONTACTS INFO ===*/
+
+
+.contact-list__link,
+.contact-info__date {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: #9d9d9d;
+}
+
+/*? .contact-info .undertitle {
+  color: #fff;
+} */
+
+/* === END CONTACTS INFO ===*/
+
+/* === FOOTER ===*/
+.copyright{
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.02em;
+  color: #9d9d9d;
+}
+/* === end FOOTER ===*/
