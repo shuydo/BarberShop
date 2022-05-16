@@ -1,9 +1,8 @@
 .modal__btn {
   min-width: 160px;
-  /* height: 40px; */
-  border: 1px solid var(--accent-color);
+  border: 1px solid $accent-color;
   border-radius: 25px;
-  font-family: var(--main-font);
+  font-family: $main-font;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -14,12 +13,15 @@
   color: #303030;
 
   transition: all 250ms linear;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: #fff;
+  }
+
+  &-dark-theme {
+    color: #fff;
+  }
 }
-.modal__btn:hover,
-.modal__btn:focus {
-  background-color: var(--accent-color);
-  color: #fff;
-}
-.modal__btn-dark-theme {
-  color: #fff;
-}
+
+

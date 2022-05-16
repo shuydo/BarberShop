@@ -1,15 +1,16 @@
 .title {
-  font-family: var(--secondry-font);
+  font-family: $secondry-font;
   font-weight: 700;
   font-size: 42px;
   line-height: calc(49 / 42);
   letter-spacing: 0.05em;
   color: #303030;
-}
-.title_light-theme {
-  color: #303030;
-}
 
-.title_dark-theme {
-  color: #fff;
+  &_light-theme {
+    color: #303030;
+  }
+  
+  &_dark-theme {
+    color: #fff;
+  }
 }

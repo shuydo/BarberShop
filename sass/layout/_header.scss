@@ -47,7 +47,7 @@
 .navigation__list-link:focus,
 .header__tel:hover,
 .header__tel:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 /* -- - VSC подскажет имеющиеся переменные и подставит со словом var*/

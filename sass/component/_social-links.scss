@@ -3,31 +3,40 @@
   transform: rotate(-90deg) translateX(-18px);
   transform-origin: top left;
 }
-.social-links__item:first-child {
-  display: flex;
-  align-items: center;
+
+.social-links__item {
+  &:first-child {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      display: block;
+      content: "";
+      width: 60px;
+      height: 1px;
+      background-color: #303030;
+      margin-right: 40px;
+    }
+  }
+  
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
 }
-.social-links__item:first-child::before {
-  display: block;
-  content: "";
-  width: 60px;
-  height: 1px;
-  background-color: #303030;
-  margin-right: 40px;
-}
-.social-links__item:not(:last-child) {
-  margin-right: 40px;
-}
+
+
+
 .social-links__link {
-  font-family: var(--main-font);
+  font-family: $main-font;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.36;
   letter-spacing: 0em;
   color: #303030;
   transition: color 250ms linear;
-}
-.social-links__link:hover,
-.social-links__link:focus {
-  color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }

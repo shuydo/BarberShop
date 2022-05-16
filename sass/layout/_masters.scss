@@ -27,7 +27,7 @@
   line-height: calc(19 / 14);
   letter-spacing: 0.02em;
   text-align: center;
-  color: var(--accent-color);
+  color: $accent-color;
   margin-bottom: 30px;
 }
 .social-list {
@@ -51,7 +51,7 @@
 }
 .social-list__link:hover .social-list__icon,
 .social-list__link:focus .social-list__icon {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 .social-list__icon {
   width: 20px;

@@ -11,14 +11,8 @@
   overflow: hidden;
 }
 
-:root {
-  --accent-color: #ff6c00;
-  --main-font: "Open Sans", sans-serif;
-  --secondry-font: "Raleway", sans-serif;
-}
-
 body {
-  font-family: var(--main-font);
+  font-family: body main-font;
   /* font-size: ;
   /* line-height: ; */
   /* color: green;  */
@@ -69,10 +63,9 @@ img {
 
 .modal__btn {
   min-width: 160px;
-  /* height: 40px; */
-  border: 1px solid var(--accent-color);
+  border: 1px solid #ff6c00;
   border-radius: 25px;
-  font-family: var(--main-font);
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -84,9 +77,8 @@ img {
   transition: all 250ms linear;
 }
 
-.modal__btn:hover,
-.modal__btn:focus {
-  background-color: var(--accent-color);
+.modal__btn:hover, .modal__btn:focus {
+  background-color: #ff6c00;
   color: #fff;
 }
 
@@ -119,7 +111,7 @@ img {
 }
 
 .social-links__link {
-  font-family: var(--main-font);
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.36;
@@ -128,13 +120,11 @@ img {
   transition: color 250ms linear;
 }
 
-.social-links__link:hover,
-.social-links__link:focus {
-  color: var(--accent-color);
+.social-links__link:hover, .social-links__link:focus {
+  color: #ff6c00;
 }
 
 .undertitle {
-  /* font-family: var(--main-font); */
   display: flex;
   align-items: center;
   font-weight: 600;
@@ -143,7 +133,6 @@ img {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 20px;
-  /* color */
 }
 
 .undertitle::before {
@@ -151,7 +140,6 @@ img {
   display: block;
   width: 60px;
   height: 1px;
-  /* background-color: #333; */
   margin-right: 20px;
 }
 
@@ -159,7 +147,7 @@ img {
   color: #303030;
 }
 
-.undertitle_light-theme::before {
+.undertitle_light-theme-theme::before {
   background-color: #303030;
 }
 
@@ -172,7 +160,6 @@ img {
 }
 
 .description {
-  /* font-family: var(--main-font); */
   font-weight: 400;
   font-size: 18px;
   line-height: calc(30 / 18);
@@ -189,7 +176,7 @@ img {
 }
 
 .title {
-  font-family: var(--secondry-font);
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 42px;
   line-height: calc(49 / 42);
@@ -215,30 +202,25 @@ img {
   transition: all 500ms linear;
 }
 
-/* -------- FRG для наложения/сняттия BD до/после появления/исчезновения модалки----------- */
 .backdrop.is-hidden {
   transition: all 500ms linear 500ms;
 }
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0);
-  transition: transform 500ms linear 0ms;
-}
-
-/* ---------- end FRG--------- */
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  /* transform: translate(-50%, -50%); */
-  /* toggle frg-s */
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
   min-height: 581px;
   padding: 40px;
   background-color: #fff;
-  /* след.строка выключается тоже при некаскадном убирании BD */
   transition: transform 500ms linear 500ms;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 500ms linear 0ms;
 }
 
 .close-btn {
@@ -265,12 +247,10 @@ img {
 }
 
 .modal__form-field {
-  /* position: relative; */
   margin-bottom: 10px;
 }
 
 .modal__form-input-wrapper {
-  /* обёртка для неабсолютной верт.центровки */
   position: relative;
   display: block;
   margin-top: 4px;
@@ -278,37 +258,27 @@ img {
 
 .modal__form-input,
 .modal___form-message {
-  /* shu */
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  /* margin-top: 4px; */
   transition: border-color 250ms linear;
 }
 
 .modal__form-input {
   height: 40px;
   padding-left: 42px;
-  /* margin-top: 4px; */
 }
 
 .modal__form-input:focus {
   outline: none;
-  border-color: var(--accent-color);
-}
-
-.modal__form-input:focus + .modal__form-icon {
-  background-color: var(--accent-color);
+  border-color: #ff6c00;
 }
 
 .modal__form-icon {
   position: absolute;
   left: 12px;
-  /* bottom: 11px; выкл. для не абсолютной верт.центровки*/
-  /* вкл.FRG для не абсолютной верт.центровки */
   top: 50%;
   transform: translateY(-50%);
-  /* end FRG */
   display: block;
   width: 18px;
   height: 18px;
@@ -316,31 +286,26 @@ img {
   transition: background-color 250ms linear;
 }
 
+.modal__form-input:focus + .modal__form-icon {
+  background-color: #ff6c00;
+}
+
 .modal___form-message {
-  /* width: 100%; */
   height: 120px;
-  /* border-radius: 4px; */
-  /* border-style: solid;
-  border-width: 1px; */
+  border-width: 1px;
   padding: 12px 16px;
   margin-top: 4px;
   resize: none;
 }
 
-.modal___form-message::placeholder {
-  text-transform: uppercase;
-}
-
 .modal___form-message:focus {
   outline: none;
   outline-offset: 0px;
-  border-color: var(--accent-color);
+  border-color: #ff6c00;
 }
 
-.modal__form-policy:checked + .modal__form-policy-text::before {
-  background-color: tomato;
-  border: 4px solid white;
-  /* background-image: url(); */
+.modal___form-message::placeholder {
+  text-transform: uppercase;
 }
 
 .modal__form-policy-text {
@@ -351,11 +316,15 @@ img {
   display: block;
   content: "";
   width: 16px;
-  /* height: 15px; */
   height: 16px;
   outline: 1px solid black;
   border: 1px solid #000;
   margin-right: 10px;
+}
+
+.modal__form-policy:checked + .modal__form-policy-text::before {
+  background-color: tomato;
+  border: 4px solid white;
 }
 
 .modal__form-btn {
@@ -417,7 +386,7 @@ img {
 .navigation__list-link:focus,
 .header__tel:hover,
 .header__tel:focus {
-  color: var(--accent-color);
+  color: #ff6c00;
 }
 
 /* -- - VSC подскажет имеющиеся переменные и подставит со словом var*/
@@ -442,7 +411,7 @@ img {
 }
 
 .hero__title {
-  font-family: var(--secondry-font);
+  font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 72px;
   line-height: calc(85 / 72);
@@ -674,7 +643,7 @@ img {
   line-height: calc(19 / 14);
   letter-spacing: 0.02em;
   text-align: center;
-  color: var(--accent-color);
+  color: #ff6c00;
   margin-bottom: 30px;
 }
 
@@ -701,7 +670,7 @@ img {
 
 .social-list__link:hover .social-list__icon,
 .social-list__link:focus .social-list__icon {
-  fill: var(--accent-color);
+  fill: #ff6c00;
 }
 
 .social-list__icon {
