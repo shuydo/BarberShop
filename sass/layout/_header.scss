@@ -1,0 +1,53 @@
+.header {
+  position: absolute;
+  width: 100%;
+  padding: 30px 0;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+}
+.header .logo {
+  margin-right: 70px;
+  animation-duration: 2000ms;
+  /* animation-iteration-count: 2; */
+}
+
+
+.header .address {
+  margin-left: auto;
+  margin-right: 40px;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.navigation__list {
+  display: flex;
+  /* align-items: center; */
+}
+.navigation__list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.navigation__list-link,
+.header__tel {
+  /* font-style: normal; */
+  /* text-transform: uppercase; */
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: #fff;
+  transition: color 250ms linear;
+}
+
+.navigation__list-link:hover,
+.navigation__list-link:focus,
+.header__tel:hover,
+.header__tel:focus {
+  color: var(--accent-color);
+}
+
+/* -- - VSC подскажет имеющиеся переменные и подставит со словом var*/
