@@ -1,16 +1,17 @@
 .description {
   font-weight: 400;
-  font-size: 18px;
-  line-height: calc(30 / 18);
+  font-size: 16px;
+  line-height: calc(26 / 16);
   letter-spacing: 0.02em;
   color: #9da4bd;
 
   &_light-theme {
     color: #555;
   }
-  
+
   &_dark-theme {
     color: #9da4bd;
   }
 }
 
+//   line-height: calc(30 / 18);

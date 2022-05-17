@@ -29,9 +29,9 @@
 .social-links__link {
   font-family: $main-font;
   font-weight: 600;
-  font-size: 12px;
-  line-height: 1.36;
-  letter-spacing: 0em;
+  font-size: 11px;
+  line-height: calc(15/11);
+  letter-spacing: .2em;
   color: #303030;
   transition: color 250ms linear;
 
