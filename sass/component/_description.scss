@@ -1,17 +1,26 @@
 .description {
   font-weight: 400;
-  font-size: 16px;
-  line-height: calc(26 / 16);
+  font-size: 18px;
+  line-height: 30px;
   letter-spacing: 0.02em;
-  color: #9da4bd;
+  // color: #9da4bd;
+  // color: #303030
+
+  @media screen and (min-width: 480px) {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 330px;
+  }
 
   &_light-theme {
     color: #555;
+    // outline: solid red;
   }
 
   &_dark-theme {
     color: #9da4bd;
   }
 }
-
-//   line-height: calc(30 / 18);

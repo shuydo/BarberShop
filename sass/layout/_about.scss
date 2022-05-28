@@ -7,14 +7,16 @@
 }
 
 .about__text {
+  // outline: solid red;
   font-weight: 400;
   font-size: 14px;
-  line-height: calc(26 / 14);
+  line-height: 26px;
   // line-height: 1.857;
   letter-spacing: 0.02em;
+  width: 402px;
   color: #555;
   margin-bottom: 40px;
-  padding-right: 58px;
+  // padding-right: 58px;
   // padding-right: 16px; Репин
 }
 
@@ -35,10 +37,12 @@
   }
 
   .about__right-side {
-    padding-left: 30px;
+    // outline: solid red;
+    margin-left: 28px;
   }
   .about__text {
-    padding-right: 0;
+    // padding-right: 0;
+    width: 100%;
   }
 }
 // ====== end tablet =====
