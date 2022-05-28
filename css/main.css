@@ -95,13 +95,14 @@ img {
 
 .modal__btn {
   min-width: 160px;
-  border: 1px solid #ff6c00;
+  outline: 1px solid #ff6c00;
+  border: none;
   border-radius: 25px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
+  line-height: 16px;
+  letter-spacing: 0.089em;
   text-transform: uppercase;
   background-color: transparent;
   padding: 12px 20px;
@@ -161,8 +162,8 @@ img {
   align-items: center;
   font-weight: 600;
   font-size: 11px;
-  line-height: calc(15 / 12);
-  letter-spacing: 0.1em;
+  line-height: 15px;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -207,7 +208,13 @@ img {
 
 @media screen and (min-width: 768px) {
   .description {
-    width: 330px;
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .description {
+    width: 445px;
   }
 }
 
@@ -222,29 +229,18 @@ img {
 .title {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 28px;
-  line-height: calc(33 / 28);
+  font-size: 42px;
+  line-height: 49px;
   letter-spacing: 0.05em;
   color: #303030;
 }
 
 .title_light-theme {
-  color: #303030;
-}
-
-.title_dark-theme {
   color: #fff;
 }
 
-@media screen and (min-width: 1200px) {
-  .title {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 42px;
-    line-height: calc(49 / 42);
-    letter-spacing: 0.05em;
-    color: #303030;
-  }
+.title_dark-theme {
+  color: #303030;
 }
 
 .backdrop {
@@ -573,7 +569,7 @@ img {
     margin-bottom: 30px;
   }
   .about__right-side {
-    margin-left: 28px;
+    margin-left: 29px;
   }
   .about__text {
     width: 100%;
@@ -591,12 +587,14 @@ img {
   .about__right-side {
     padding-left: 64px;
   }
+  .about__text {
+    width: 489px;
+  }
 }
 
 .services {
   background-color: #111319;
-  background-image: url(../images/services/bg.png);
-  /* background-repeat: no-repeat; */
+  background-image: url(../images/services/services-mobile.png);
   background-size: cover;
 }
 
@@ -604,53 +602,6 @@ img {
   margin-bottom: 44px;
 }
 
-.services .modal__btn {
-  display: block;
-  margin: 0 auto;
-}
-
-.services__list-wrapper {
-  display: flex;
-  /* flex-wrap: wrap; */
-  margin-bottom: 50px;
-}
-
-.services__list {
-  width: 50%;
-  padding: 30px 40px;
-  /* border: 1px solid #303030; */
-  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2));
-}
-
-/* .services__list:first-child {
-  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2));
-}
-.services__list:last-child {
-  background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2));
-} */
-/* шахматка */
-.services__list:nth-child(4n-1),
-.services__list:nth-child(4n-2) {
-  background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2));
-}
-
-.services__list-item {
-  display: flex;
-  align-items: baseline;
-  /* justify-content: space-between; */
-  /* position: relative; */
-}
-
-/* .services__list-item::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: block;
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color:  #ccc;
-} */
 .services__list-item:not(:last-child) {
   margin-bottom: 20px;
 }
@@ -665,10 +616,76 @@ img {
 .services__list-item-name,
 .services__list-item-price {
   font-weight: 400;
-  font-size: 18px;
-  line-height: calc(30 / 18);
+  font-size: 14px;
+  line-height: 30px;
   letter-spacing: 0.02em;
-  color: #9d9d9d;
+  color: #9da4bd;
+}
+
+.services .modal__btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.services__list-wrapper {
+  display: block;
+  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2));
+  padding: 30px 30px;
+  margin-bottom: 50px;
+}
+
+.services__list:first-child {
+  padding-bottom: 20px;
+}
+
+/* .services__list:first-child {
+  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2));
+}
+.services__list:last-child {
+  background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2));
+} */
+.services__list-item {
+  display: flex;
+  align-items: baseline;
+}
+
+@media screen and (min-width: 768px) {
+  .services {
+    background-image: url(../images/services/services-tablet.png);
+  }
+  .services__list-wrapper {
+    padding: 30px 40px;
+  }
+  .services__list-item-name,
+  .services__list-item-price {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .services {
+    background-image: url(../images/services/services-desktop.png);
+    background-size: cover;
+  }
+  .services__list-wrapper {
+    display: flex;
+    background-image: none;
+    padding: 0;
+  }
+  .services__list {
+    width: 50%;
+    padding: 30px 40px;
+    background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2));
+  }
+  .services__list:first-child {
+    padding-bottom: 0px;
+  }
+  /* шахматка */
+  .services__list:nth-child(4n-1),
+  .services__list:nth-child(4n-2) {
+    background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2));
+  }
 }
 
 .achivements .container {

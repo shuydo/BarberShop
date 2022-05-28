@@ -1,12 +1,15 @@
 .modal__btn {
   min-width: 160px;
-  border: 1px solid $accent-color;
+  outline: 1px solid $accent-color;
+  border:none;
+  // border: 1px solid $accent-color;
   border-radius: 25px;
   font-family: $main-font;
   font-weight: 600;
   font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
+  line-height: 16px;
+  letter-spacing: 0.089em;
+  // letter-spacing: 0.1em;
   text-transform: uppercase;
   background-color: transparent;
   padding: 12px 20px;
