@@ -1,26 +1,19 @@
 .about .title {
   margin-bottom: 20px;
 }
-
 .about .description {
   margin-bottom: 20px;
 }
-
 .about__text {
-  // outline: solid red;
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
-  // line-height: 1.857;
   letter-spacing: 0.02em;
   width: 402px;
   color: #555;
   margin-bottom: 40px;
-  // padding-right: 58px;
-  // padding-right: 16px; Репин
 }
 
-// @media screen and(min-width:320px) and (max-width: 768px) {
 @media screen and(min-width:320px) and (max-width: 767.9px) {
   .about__list {
     display: none;
@@ -31,27 +24,21 @@
   .about .container {
     display: flex;
   }
-
   .about__list-item:not(:last-child) {
     margin-bottom: 30px;
   }
-
   .about__right-side {
-    // outline: solid red;
     margin-left: 29px;
   }
   .about__text {
-    // padding-right: 0;
     width: 100%;
   }
 }
-// ====== end tablet =====
 // ======  desktop =====
 @media screen and (min-width: 1200px) {
   .about__list {
     display: flex;
   }
-
   .about__list-item:not(:last-child) {
     margin-right: 30px;
     margin-bottom: 0;
@@ -59,10 +46,7 @@
   .about__right-side {
     padding-left: 64px;
   }
-
   .about__text {
     width: 489px;
   }
 }
-
-// ====== end desktop =====
