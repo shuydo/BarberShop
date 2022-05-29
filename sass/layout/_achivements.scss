@@ -1,5 +1,12 @@
 .achivements .container {
   display: flex;
+  flex-direction: column;
+}
+.achivements .title {
+  padding-bottom: 20px;
+}
+.achivements__left-side {
+  order: 2;
 }
 .achivements__list {
   display: flex;
@@ -7,38 +14,32 @@
   align-items: flex-start;
 }
 .achivements .description {
-  margin-right: 86px;
-}
-.achivements__left-side {
-  width: 470px;
-  flex-shrink: 0;
-  padding-left: 100px;
-}
-.achivements__right-side {
-  padding-left: 130px;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 44px;
 }
 .achivements__list-item {
-  width: 170px;
+  width: 193px;
   min-height: 133px;
-  /* border: 1px solid red; */
   background-color: #f7f7f7;
-  padding: 20px 19px;
+  padding: 20px 31px;
 }
 .achivements__list-item:nth-child(odd) {
-  /* .achivements__list-item:not(:nth-child(even)){ */
   margin-right: 30px;
 }
 .achivements__list-item:nth-child(even) {
+  margin-top: 35px;
+}
+.achivements__list-item:last-child {
   margin-top: 30px;
 }
-
 .achivements__list-item-counter {
   position: relative;
   width: max-content;
   margin: 0 auto;
   font-weight: 700;
   font-size: 42px;
-  line-height: calc(57 / 42);
+  line-height: 57px;
   letter-spacing: 0.05em;
   text-align: center;
   color: #303030;
@@ -48,7 +49,7 @@
   position: absolute;
   top: 12px;
   right: -8px;
-  content: "";
+  content: '';
   display: block;
   height: 9px;
   width: 9px;
@@ -57,7 +58,46 @@
 .achivements__list-item-descr {
   font-weight: 600;
   font-size: 11px;
-  line-height: calc(15 / 11);
+  line-height: 15px;
   text-align: center;
   color: #303030;
+}
+// ========== Tablet ===============
+@media screen and (min-width: 768px) {
+  .achivements__right-side {
+    max-width: 500px;
+  }
+  .achivements__left-side {
+    margin-left: 240px;
+  }
+  .achivements .description {
+    width: 100%;
+  }
+}
+// ========== Desktop ===============
+@media screen and (min-width: 1200px) {
+  .achivements .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .achivements.section {
+    padding-top: 121px;
+  }
+  .achivements .description {
+    margin-right: 86px;
+  }
+  .achivements__left-side {
+    width: 470px;
+    margin-left: 0;
+    flex-shrink: 0;
+    padding-left: 100px;
+  }
+  .achivements__right-side {
+    margin-left: 130px;
+    order: 2;
+  }
+  .achivements__list-item {
+    width: 170px;
+    padding: 20px 19px;
+  }
 }
