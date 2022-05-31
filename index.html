@@ -308,7 +308,7 @@
       </section>
 
       <!-- MASTERS -->
-      <section class="masters section" style="display: none">
+      <!-- <section class="masters section">
         <div class="container">
           <p class="undertitle undertitle_light-theme">
             для настоящих ценителей атмосферы
@@ -565,7 +565,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- GALLERY -->
       <!-- <h2 hidden>галерея работ</h2> -->
@@ -578,40 +578,200 @@
           </p>
           <ul class="gallery__list list">
             <li class="gallery__list-item">
-              <img
-                class="gallery__list-img"
-                src="./images/gallery/gallery-img-1.jpg"
-                alt="стрижка"
-                width="270"
-                height="360"
-              />
+              <picture class="masters__list-img">
+                <source
+                  srcset="
+                    ./images/gallery/gallery-img-desktop-1.webp    1x,
+                    ./images/gallery/gallery-img-desktop-1@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery-img-tablet-1.webp    1x,
+                    ./images/gallery/gallery-img-tablet-1@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery-img-mobile-1.webp    1x,
+                    ./images/gallery/gallery-img-mobile-1@2x.webp 2x
+                  "
+                  media="(min-width:320px)"
+                  type="image/webp" />
+
+                <source
+                  srcset="
+                    ./images/gallery/gallery-img-desktop-1.jpg    1x,
+                    ./images/gallery/gallery-img-desktop-1@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery-img-tablet-1.jpg    1x,
+                    ./images/gallery/gallery-img-tablet-1@2x.jpg 2x
+                  "
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery-img-mobile-1.jpg    1x,
+                    ./images/gallery/gallery-img-mobile-1@2x.jpg 2x
+                  "
+                  media="(min-width:320px)" />
+                <img
+                  class="gallery__list-img"
+                  src="./images/gallery/gallery-img-mobile-1.jpg"
+                  alt="стрижка"
+              /></picture>
+              <!-- width="418"M width="330"T width="270"DT height="360" -->
             </li>
+            
             <li class="gallery__list-item">
-              <img
-                class="gallery__list-img"
-                src="./images/gallery/gallery-img-2.jpg"
-                alt="бритьё"
-                width="270"
-                height="360"
-              />
+              <picture class="masters__list-img">
+                <source
+                  srcset="
+                    ./images/gallery/gallery-img-desktop-2.webp    1x,
+                    ./images/gallery/gallery-img-desktop-2@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery-img-tablet-2.webp    1x,
+                    ./images/gallery/gallery-img-tablet-2@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery-img-mobile-2.webp    1x,
+                    ./images/gallery/gallery-img-mobile-2@2x.webp 2x
+                  "
+                  media="(min-width:320px)"
+                  type="image/webp" />
+
+                <source
+                  srcset="
+                    ./images/gallery/gallery-img-desktop-2.jpg    1x,
+                    ./images/gallery/gallery-img-desktop-2@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery-img-tablet-2.jpg    1x,
+                    ./images/gallery/gallery-img-tablet-2@2x.jpg 2x
+                  "
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery-img-mobile-2.jpg    1x,
+                    ./images/gallery/gallery-img-mobile-2@2x.jpg 2x
+                  "
+                  media="(min-width:320px)" />
+                <img
+                  class="gallery__list-img"
+                  src="./images/gallery/gallery-img-mobile-2.jpg"
+                  alt="стрижка"
+              /></picture>
             </li>
+
             <li class="gallery__list-item">
-              <img
-                class="gallery__list-img"
-                src="./images/gallery/gallery-img-3.jpg"
-                alt="распаривание"
-                width="270"
-                height="360"
-              />
+              <picture class="masters__list-img">
+                <source
+                  srcset="
+                    ./images/gallery/gallery-img-desktop-3.webp    1x,
+                    ./images/gallery/gallery-img-desktop-3@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery-img-tablet-3.webp    1x,
+                    ./images/gallery/gallery-img-tablet-3@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery-img-mobile-3.webp    1x,
+                    ./images/gallery/gallery-img-mobile-3@2x.webp 2x
+                  "
+                  media="(min-width:320px)"
+                  type="image/webp" />
+
+                <source
+                  srcset="
+                    ./images/gallery/gallery-img-desktop-3.jpg    1x,
+                    ./images/gallery/gallery-img-desktop-3@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery-img-tablet-3.jpg    1x,
+                    ./images/gallery/gallery-img-tablet-3@2x.jpg 2x
+                  "
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery-img-mobile-3.jpg    1x,
+                    ./images/gallery/gallery-img-mobile-3@2x.jpg 2x
+                  "
+                  media="(min-width:320px)" />
+                <img
+                  class="gallery__list-img"
+                  src="./images/gallery/gallery-img-mobile-3.jpg"
+                  alt="стрижка"
+              /></picture>
             </li>
+
             <li class="gallery__list-item">
-              <img
-                class="gallery__list-img"
-                src="./images/gallery/gallery-img-4.jpg"
-                alt="стрижка 2"
-                width="270"
-                height="360"
-              />
+              <picture class="masters__list-img">
+                <source
+                  srcset="
+                    ./images/gallery/gallery-img-desktop-4.webp    1x,
+                    ./images/gallery/gallery-img-desktop-4@2x.webp 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery-img-tablet-4.webp    1x,
+                    ./images/gallery/gallery-img-tablet-4@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery-img-mobile-4.webp    1x,
+                    ./images/gallery/gallery-img-mobile-4@2x.webp 2x
+                  "
+                  media="(min-width:320px)"
+                  type="image/webp" />
+
+                <source
+                  srcset="
+                    ./images/gallery/gallery-img-desktop-4.jpg    1x,
+                    ./images/gallery/gallery-img-desktop-4@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery-img-tablet-4.jpg    1x,
+                    ./images/gallery/gallery-img-tablet-4@2x.jpg 2x
+                  "
+                  media="(min-width:768px)" />
+                <source
+                  srcset="
+                    ./images/gallery/gallery-img-mobile-4.jpg    1x,
+                    ./images/gallery/gallery-img-mobile-4@2x.jpg 2x
+                  "
+                  media="(min-width:320px)" />
+                <img
+                  class="gallery__list-img"
+                  src="./images/gallery/gallery-img-mobile-4.jpg"
+                  alt="стрижка"
+              /></picture>
             </li>
           </ul>
         </div>

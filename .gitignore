@@ -1,4 +1,8 @@
-css/
+# css/
+# git rm -r --cached css
+css/main.css
+css/main.css.map
+
 # Logs
 logs
 *.log
