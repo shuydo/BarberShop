@@ -64,13 +64,12 @@
       </div>
     </header>
     <main>
-      <!-- HERO -->
-      <section class="hero" style="display: none">
+      <!-- HERO             lang для читалки в популярных словах не обяз.-->
+      <!-- <section class="hero">
         <div class="container">
           <div class="hero__left-side">
             <ul class="social-links list">
               <li class="social-links__item">
-                <!-- lang для читалки в популярных словах не обяз.-->
                 <a class="social-links__link link" href="#">Instagram</a>
               </li>
               <li class="social-links__item">
@@ -82,7 +81,6 @@
             <p class="undertitle undertitle_dark-theme" lang="en">
               A hair salon for men in Kyive
             </p>
-            <!-- lang для читалки -->
             <h1 class="hero__title">BarberShop</h1>
             <p class="description description_dark-theme" lang="en">
               Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно
@@ -90,7 +88,7 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- ABOUT -->
       <!-- <section class="about section">
@@ -189,8 +187,7 @@
         </div>
       </section> -->
 
-      <!-- SERVICES -->
-      <!-- c реализацией шахматки -->
+      <!-- SERVICES                                      c реализацией шахматки -->
       <section class="services section" style="display: none">
         <div class="container">
           <p class="undertitle undertitle_dark-theme">
@@ -567,9 +564,9 @@
         </div>
       </section> -->
 
-      <!-- GALLERY -->
+      <!-- GALLERY width="418"M width="330"T width="270"DT height="360"-->
       <!-- <h2 hidden>галерея работ</h2> -->
-      <section class="gallery section">
+      <!-- <section class="gallery section">
         <div class="container">
           <h2 class="visually-hidden">галерея работ</h2>
 
@@ -624,9 +621,8 @@
                   src="./images/gallery/gallery-img-mobile-1.jpg"
                   alt="стрижка"
               /></picture>
-              <!-- width="418"M width="330"T width="270"DT height="360" -->
             </li>
-            
+
             <li class="gallery__list-item">
               <picture class="masters__list-img">
                 <source
@@ -775,59 +771,96 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- CONTACTS -->
-      <div class="visually-hidden">
+      <div class="contact">
         <!-- CONTACTS FORM-->
         <section class="contact-form-section">
-          <h2 class="title">Онлайн-запись</h2>
+          <h2 class="title title_dark-theme">Онлайн-запись</h2>
+          <form action="#" class="contact-form">
+            <input
+              type="text"
+              name="user_name"
+              class="contact-form__input"
+              placeholder="Имя*"
+              required
+            />
+            <input
+              type="tel"
+              name="user_phone"
+              class="contact-form__input"
+              placeholder="Телефон*"
+              required
+            />
+            <textarea
+              name="user_message"
+              class="contact-form__message"
+              placeholder="сообщение"
+            ></textarea>
+            <button class="contact-form__btn">отправить</button>
+          </form>
         </section>
 
         <!-- CONTACTS INFO-->
-        <section class="contact-info visually-hidden">
-          <h2 class="title">Контакты</h2>
-          <address class="address">
-            <!-- https://caninclude.glitch.me/caninclude?child=ul&parent=address -->
-            <ul class="cotact-list list">
-              <li class="contact-list__item">
-                <a
-                  class="contact-list__link link"
-                  href="https://goo.gl/maps/Bo3qmcThFFpb2vqBA"
-                  target="_blank"
-                  >ул. Васильковая , 7А Киев, 08132
-                </a>
-              </li>
-              <li class="contact-list__item">
-                <a class="contact-list__link link" href="tel:+3804411111111"
-                  >+3804411111111</a
-                >
-              </li>
-              <li class="contact-list__item">
-                <a
-                  class="contact-list__link link"
-                  href="mailto:barbershop@email.com"
-                  >barbershop@email.com</a
-                >
-              </li>
-            </ul>
-          </address>
-          <p class="undertitle undertitle_dark-theme">время работы</p>
-          <p class="contact-info__date">
-            Ежедневно <time>с 9:00 до 22:00</time>
-          </p>
+        <!-- https://caninclude.glitch.me/caninclude?child=ul&parent=address -->
+        <section class="contact-info">
+          <h2 class="title title_dark-theme">Контакты</h2>
+          <div class="contact-wrapper">
+            <address class="address">
+              <ul class="cotact-list list">
+                <li class="contact-list__item">
+                  <a
+                    class="contact-list__link link"
+                    href="https://goo.gl/maps/Bo3qmcThFFpb2vqBA"
+                    target="_blank"
+                  >
+                    <svg class="contact-list__icon" width="24" height="24">
+                      <use href="./images/sprite.svg#map-pin"></use></svg
+                    >ул. Васильковая , 7А<br />Киев, 08132
+                  </a>
+                </li>
+                <li class="contact-list__item">
+                  <a class="contact-list__link link" href="tel:+3804411111111"
+                    ><svg class="contact-list__icon" width="24" height="24">
+                      <use href="./images/sprite.svg#phone"></use></svg
+                    >+3804411111111</a
+                  >
+                </li>
+                <li class="contact-list__item">
+                  <a
+                    class="contact-list__link"
+                    href="mailto:barbershop@email.com"
+                  >
+                    <svg class="contact-list__icon" width="24" height="24">
+                      <use href="./images/sprite.svg#mail "></use>
+                    </svg>
+                    barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            
+            <div class="time-wrapper">
+              <p class="undertitle undertitle_contact-theme">время работы</p>
+              <p class="contact-info__date">
+                Ежедневно <time>с 9:00 до 22:00</time>
+              </p>
+            </div>
+          </div>
         </section>
       </div>
     </main>
 
-    <footer class="footer visually-hidden">
+    <!-- ===== footer ===== -->
+    <!-- https://www.toptal.com/designers/htmlarrows/symbols/ -->
+    <!-- lang для читалки в популярных словах не обяз.-->
+    <!-- <footer class="footer">
       <div class="container">
-        <!-- https://www.toptal.com/designers/htmlarrows/symbols/ -->
         <p class="copyright">&copy Copyright 2020</p>
 
         <ul class="social-links list">
           <li class="social-links__item">
-            <!-- lang для читалки в популярных словах не обяз.-->
             <a class="social-links__link link" href="#">Instagram</a>
           </li>
           <li class="social-links__item">
@@ -835,7 +868,7 @@
           </li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- <div class="backdrop" data-modal> -->
     <div class="backdrop is-hidden" data-modal>

@@ -31,6 +31,14 @@
       background-color: rgba(157, 164, 189, 0.6);
     }
   }
+
+  &_contact-theme {
+    color: #fff;
+  
+    &::before {
+      background-color: rgba(157, 164, 189, 0.6);
+    }
+  }
 }
 
 
