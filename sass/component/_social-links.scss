@@ -1,0 +1,42 @@
+.social-links {
+  display: flex;
+  transform: rotate(-90deg) translateX(-18px);
+  transform-origin: top left;
+}
+
+.social-links__item {
+  &:first-child {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      display: block;
+      content: "";
+      width: 60px;
+      height: 1px;
+      background-color: #303030;
+      margin-right: 40px;
+    }
+  }
+  
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+
+
+.social-links__link {
+  font-family: $main-font;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15/11);
+  letter-spacing: .2em;
+  color: #303030;
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
